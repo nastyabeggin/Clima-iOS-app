@@ -2,9 +2,9 @@
   "images" : [
     {
       "alignment-insets" : {
-        "bottom" : 30,
+        "bottom" : 15,
         "left" : 0,
-        "right" : 0,
+        "right" : 5,
         "top" : 0
       },
       "filename" : "background_light.pdf",
@@ -14,7 +14,7 @@
       "alignment-insets" : {
         "bottom" : 15,
         "left" : 0,
-        "right" : 0,
+        "right" : 5,
         "top" : 0
       },
       "appearances" : [
@@ -30,7 +30,7 @@
       "alignment-insets" : {
         "bottom" : 15,
         "left" : 0,
-        "right" : 0,
+        "right" : 5,
         "top" : 0
       },
       "appearances" : [
