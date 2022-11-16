@@ -4,17 +4,17 @@
       "alignment-insets" : {
         "bottom" : 15,
         "left" : 0,
-        "right" : 5,
+        "right" : 0,
         "top" : 0
       },
-      "filename" : "background_light.pdf",
+      "filename" : "Group 1-4 1.pdf",
       "idiom" : "universal"
     },
     {
       "alignment-insets" : {
         "bottom" : 15,
         "left" : 0,
-        "right" : 5,
+        "right" : 0,
         "top" : 0
       },
       "appearances" : [
@@ -23,14 +23,14 @@
           "value" : "light"
         }
       ],
-      "filename" : "background_light 1.pdf",
+      "filename" : "Group 1-4.pdf",
       "idiom" : "universal"
     },
     {
       "alignment-insets" : {
         "bottom" : 15,
         "left" : 0,
-        "right" : 5,
+        "right" : 0,
         "top" : 0
       },
       "appearances" : [
@@ -39,7 +39,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "background_dark.pdf",
+      "filename" : "Group 1-3.pdf",
       "idiom" : "universal"
     }
   ],

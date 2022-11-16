@@ -45,9 +45,9 @@ struct WeatherModel{
                 return "moon"
             }
         case 801...810:
-            return "clouds"
+            return "cloud"
         default:
-            return "clouds"
+            return "cloud"
         }
         
     }

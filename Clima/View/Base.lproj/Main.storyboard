@@ -19,9 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kWX-h1-VLT">
-                                <rect key="frame" x="0.0" y="0.0" width="419" height="911"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="911"/>
+                                <color key="backgroundColor" red="0.98039215800000001" green="0.97254908080000002" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.98039215800000001" green="0.97254908080000002" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wz9-jj-JbA">
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wz9-jj-JbA">
                                 <rect key="frame" x="20" y="48" width="374" height="814"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tgv-vV-Mot">
@@ -35,6 +37,9 @@
                                                 </constraints>
                                                 <color key="tintColor" name="baseColor"/>
                                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="locationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1k-M9-L3I"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-wL-W34">
                                                 <rect key="frame" x="50" y="0.0" width="274" height="40"/>
@@ -97,6 +102,22 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ti-bh-8Fw">
                                         <rect key="frame" x="134" y="355.5" width="240" height="458.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ясно" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcU-rs-M9e">
+                                                <rect key="frame" x="204" y="0.0" width="36" height="19.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19.5" id="aqf-WY-Nli"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" name="baseColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HcU-rs-M9e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0ti-bh-8Fw" secondAttribute="leading" constant="20" symbolic="YES" id="OjT-5l-73X"/>
+                                            <constraint firstAttribute="trailing" secondItem="HcU-rs-M9e" secondAttribute="trailing" id="dWu-uc-0w6"/>
+                                            <constraint firstItem="HcU-rs-M9e" firstAttribute="top" secondItem="0ti-bh-8Fw" secondAttribute="top" id="fW5-z8-Clr"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -121,6 +142,7 @@
                     <connections>
                         <outlet property="cityLabel" destination="CWP-r8-Jsy" id="8cQ-3l-ufV"/>
                         <outlet property="conditionImageView" destination="mYn-vV-MBC" id="gpD-FU-YB0"/>
+                        <outlet property="descriptionLabel" destination="HcU-rs-M9e" id="ncW-fS-4gG"/>
                         <outlet property="searchTextField" destination="2eh-wL-W34" id="rSG-Kd-D5x"/>
                         <outlet property="temperatureLabel" destination="w9o-tW-03D" id="mF4-vV-JxK"/>
                     </connections>
@@ -131,7 +153,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="529" height="630"/>
+        <image name="background" width="556" height="630"/>
         <image name="location.circle.fill" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="sun.max" catalog="system" width="128" height="125"/>
@@ -139,7 +161,7 @@
             <color red="0.21699999272823334" green="0.18000000715255737" blue="0.10499999672174454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="inputColor">
-            <color red="0.15636804699897766" green="0.12225072085857391" blue="0.036284890025854111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.15600000321865082" green="0.12200000882148743" blue="0.035999998450279236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
